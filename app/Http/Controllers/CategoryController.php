@@ -22,6 +22,7 @@ class CategoryController extends Controller
           ->sortable()
           ->paginate($row)
           ->appends(request()->query());
+          
 
         return view('categories.index', [
             'categories' => $categories,
